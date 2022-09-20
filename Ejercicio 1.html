@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const distancia = parseInt(prompt('Cuántos metros hay desde aca hasta tu casa papu?', ''));
+
+        if (distancia <= 1000) {
+            document.write(`Andate caminando entonces, no seas vago!`);
+        } else if (distancia <= 10000 && distancia >= 1000) {
+            document.write(`Te presto mi bici, me la devolvés mañana`);
+        } else if (distancia <= 30000 && distancia >= 10000) {
+            document.write(`Tomate el 269 que va para Morón, en 30 minutos estás.`);
+        } else if (distancia <= 100000 && distancia >= 30000) {
+            document.write(`Te llamo un remis? te va a salir como $2000`);
+        } else if (distancia >= 100000) {
+            document.write(`Pero que vivís en Júpiter papá!? busquemos vuelos con SkyScanner, creo que es lo más barato.`);
+        }
+        console.log(`0 a 1000 metros = pie
+1000 a 10000 metros = bicicleta
+10000 a 30000 metros = colectivo
+30000 a 100000 metros = auto
++100000 = avión
++100000000 = en nave espacial`)
+
+
+    </script>
+</body>
+
+</html>
